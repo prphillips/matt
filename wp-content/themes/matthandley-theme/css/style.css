@@ -68,12 +68,11 @@ a:hover {
 }
 .logo:hover {background-image: url('img/logo-hover.png');}
 .logo-404 {
-	position: fixed;
+	position: relative;
 	width:230px;
 	height:81px;
 	top: 40px;
-	left: 44%;
-	margin-left: -40px;
+	margin:0 auto;
 	z-index: 999;
 	background-image: url('img/logo-404.png');
 }
