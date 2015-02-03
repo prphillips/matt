@@ -67,7 +67,16 @@ a:hover {
 	-webkit-transition: background-image 0.2s ease-in-out;
 }
 .logo:hover {background-image: url('img/logo-hover.png');}
-
+.logo-404 {
+	position: fixed;
+	width:230px;
+	height:81px;
+	top: 40px;
+	left: 44%;
+	margin-left: -40px;
+	z-index: 999;
+	background-image: url('img/logo-404.png');
+}
 ul.menu {
 	list-style: none;
 }
@@ -311,7 +320,9 @@ h4.project-tags {
 footer.container-fluid {
 	background-color: #0EDD96;
 	height: 74px;
-	width: auto;
+	width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 footer.container-fluid p {
