@@ -320,6 +320,9 @@ footer.container-fluid {
 	background-color: #0EDD96;
 	height: 74px;
 	width: 100%;
+    position: relative;
+}
+footer.container-fluid.four {
     position: fixed;
     bottom: 0;
 }

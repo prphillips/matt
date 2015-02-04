@@ -15,7 +15,7 @@
 				</div>
 			</div>
 		</div>
-	</header>
+    </header>
 
 	<div class="body home project">
 
