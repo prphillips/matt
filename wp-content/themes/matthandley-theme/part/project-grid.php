@@ -18,9 +18,15 @@
 						<figcaption>
 							<h2><?php the_title_attribute(); ?></h2>
 							<p><?php
-								$terms = get_the_terms($post->ID, 'project_tags');
-								foreach ($terms as $term) {
-									echo '<span>' . $term->name . ' </span>';
+								$tags = get_the_terms($post->ID, 'project_tags');
+                                $tagcount = count($tags);
+								foreach ($tags as $tag) {
+                                    if ($tagcount > 1) {
+                                        echo '<span>' . $tag->name . ', </span>';
+                                        $tagcount--;
+                                    } else {
+                                        echo '<span>' . $tag->name . '</span>';   
+                                    }
 								}
 								?></p>
 							<a href="<?php the_permalink(); ?>">View more</a>
