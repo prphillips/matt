@@ -31,4 +31,4 @@
 
 	<header id="top" <?php if (is_home()) { echo 'class="banner"'; } ?>>
 		<a href="<?php bloginfo( 'url' ); ?> "><div class="logo"></div></a>
-		<div class="container-fluid testclass4">
+		<div class="container-fluid">
